@@ -1,0 +1,12 @@
+WScript - Windows Script Host
+cscript test.vbs
+echo TEXT >> file.txt
+
+Set oWS = WScript.CreateObject("WScript.Shell")
+Dim scmd
+scmd = "cscript //nologo SCRIPT.vbs"
+oWS.Run scmd,o,false
+
+call main()
+sub main()
+end sub
